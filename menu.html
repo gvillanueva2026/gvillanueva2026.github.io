@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>home</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <style>
+            body {
+                background-color:#F8F2E8;
+                width: 1350px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .logo {
+                width: 100px;
+                height: 100px;
+                padding: 20px 50px;
+            }
+            .logotext {
+                padding-top: 10px;
+                padding-right: 0px;
+                color:#ffffff;
+                font-family: 'League Spartan', sans-serif;
+                font-size: 50px;
+            }
+            .navbar {
+                width: 90%;
+                margin: 0 auto;
+                background-color:#714C28;
+                display: flex;
+            }
+            nav {
+                float: right;
+                display: flex;
+            }
+            nav ul {
+                margin-left: 150px;
+                margin-top: 55px;
+                padding: 0;
+                list-style: none;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 13px;
+            }
+            nav li {
+                display: inline-block;
+                margin-left: 20px;
+                padding: 10px 60px;
+                position: relative;
+                background-color:#9D7A55;
+                border-radius: 20px;
+            }
+            nav a {
+                color:#000000;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #ffffff;
+            }
+            nav a:hover {
+                color:#593117;
+                transition: all ease-in-out 250ms;
+            }
+            .menuicon {
+                height: 125px;
+                width: 125px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px;
+            }
+            .menutitle {
+                font-size: 40px;
+                color:#cd9d63;
+                font-family: 'League Spartan', sans-serif;
+                text-align: center;
+            }
+            .menu {
+                display: flex;
+                flex-direction: row;
+                width: 90%;
+                margin-bottom: 50px;
+            }
+            .menu1 {
+                margin-left: 50px;
+            }
+            .menu1header {
+                background-color:#54381c;
+                color: #ffffff;
+                padding: 1px 50px;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 15px;
+                margin-left: 150px;
+            }
+            .size1 {
+                float: right;
+                display: flex;
+                flex-direction: row;
+                font-family: 'Montserrat', sans-serif;
+                position: absolute;
+                margin-left: 385px;
+            }
+            .sml1 {
+                margin-right: 71px;
+            }
+            .espresso {
+                display: flex;
+                flex-direction: row;
+                font-family: 'Montserrat', sans-serif;
+                margin-top: 50px;
+                margin-left: 150px;
+            }
+            .prices1 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 169px;
+            }
+            .lrgprice1 {
+                margin-left: 81px;
+            }
+            .americano {
+                display: flex;
+                flex-direction: row;
+                font-family: 'Montserrat', sans-serif;
+                margin-left: 150px;
+            }
+            .prices2 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 149px;
+            }
+            .lrgprice2 {
+                margin-left: 79px;
+            }
+            .macchiato {
+                display: flex;
+                flex-direction: row;
+                font-family: 'Montserrat', sans-serif;
+                margin-left: 150px;
+            }
+            .prices3 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 155px;
+            }
+            .lrgprice3 {
+                margin-left: 79px;
+            }
+            .cappuchino {
+                display: flex;
+                flex-direction: row;
+                font-family: 'Montserrat', sans-serif;
+                margin-left: 150px;
+            }
+            .prices4 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 140px;
+            }
+            .lrgprice4 {
+                margin-left: 80px;
+            }
+            .cafe_latte {
+                display: flex;
+                flex-direction: row;
+                font-family: 'Montserrat', sans-serif;
+                margin-left: 150px;
+            }
+            .prices5 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 157px;
+            }
+            .lrgprice5 {
+                margin-left: 80px;
+            }
+            .mocha_latte {
+                display: flex;
+                flex-direction: row;
+                font-family: 'Montserrat', sans-serif;
+                margin-left: 150px;
+            }
+            .prices6 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 139px;
+            }
+            .lrgprice6 {
+                margin-left: 78px;
+            }
+            .vanilla_latte {
+                display: flex;
+                flex-direction: row;
+                font-family: 'Montserrat', sans-serif;
+                margin-left: 150px;
+            }
+            .prices7 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 139px;
+            }
+            .lrgprice7 {
+                margin-left: 78px;
+            }
+            .choco_latte {
+                display: flex;
+                flex-direction: row;
+                font-family: 'Montserrat', sans-serif;
+                margin-left: 150px;
+            }
+            .prices8 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 142px;
+            }
+            .lrgprice8 {
+                margin-left: 79px;
+            }
+            .hazelnut_latte {
+                display: flex;
+                flex-direction: row;
+                font-family: 'Montserrat', sans-serif;
+                margin-left: 150px;
+            }
+            .prices9 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 120px;
+            }
+            .lrgprice9 {
+                margin-left: 79px;
+            }
+            .matcha_latte {
+                display: flex;
+                flex-direction: row;
+                font-family: 'Montserrat', sans-serif;
+                margin-left: 150px;
+            }
+            .prices10 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 133px;
+            }
+            .lrgprice10 {
+                margin-left: 79px;
+            }
+            .caramel_macchiato {
+                display: flex;
+                flex-direction: row;
+                font-family: 'Montserrat', sans-serif;
+                margin-left: 150px;
+            }
+            .prices11 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 83px;
+            }
+            .lrgprice11 {
+                margin-left: 79px;
+            }
+            .line {
+                padding: 2px;
+                background-color:#d1a672;
+                margin-left: 95px;
+                margin-top: 30px;
+            }
+            .menu2header {
+                background-color:#a2651b;
+                color: #ffffff;
+                padding: 1px 135px;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 15px;
+                margin-left: 95px;
+            }
+            .size2 {
+                float: right;
+                display: flex;
+                flex-direction: row;
+                font-family: 'Montserrat', sans-serif;
+                position: absolute;
+                margin-left: 330px;
+            }
+            .sml2 {
+                margin-right: 71px;
+            }
+            .vanilla {
+                display: flex;
+                flex-direction: row;
+                font-family: 'Montserrat', sans-serif;
+                margin-top: 50px;
+                margin-left: 95px;
+            }
+            .prices12 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 177px;
+            }
+            .lrgprice12 {
+                margin-left: 81px;
+            }
+            .mocha {
+                display: flex;
+                flex-direction: row;
+                font-family: 'Montserrat', sans-serif;
+                margin-left: 95px;
+            }
+            .prices13 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 184px;
+            }
+            .lrgprice13 {
+                margin-left: 82px;
+            }
+            .pure_choco {
+                display: flex;
+                flex-direction: row;
+                font-family: 'Montserrat', sans-serif;
+                margin-left: 95px;
+            }
+            .prices14 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 138px;
+            }
+            .lrgprice14 {
+                margin-left: 83px;
+            }
+            .choco_chip {
+                display: flex;
+                flex-direction: row;
+                font-family: 'Montserrat', sans-serif;
+                margin-left: 95px;
+            }
+            .prices15 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 139px;
+            }
+            .lrgprice15 {
+                margin-left: 83px;
+            }
+            .hazelnut_choco {
+                display: flex;
+                flex-direction: row;
+                font-family: 'Montserrat', sans-serif;
+                margin-left: 95px;
+            }
+            .prices16 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 103px;
+            }
+            .lrgprice16 {
+                margin-left: 83px;
+            }
+            .choco_oreo {
+                display: flex;
+                flex-direction: row;
+                font-family: 'Montserrat', sans-serif;
+                margin-left: 95px;
+            }
+            .prices17 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 138px;
+            }
+            .lrgprice17 {
+                margin-left: 81px;
+            }
+            .white_choco {
+                display: flex;
+                flex-direction: row;
+                font-family: 'Montserrat', sans-serif;
+                margin-left: 95px;
+            }
+            .prices18 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 129px;
+            }
+            .lrgprice18 {
+                margin-left: 81px;
+            }
+            .caramel {
+                display: flex;
+                flex-direction: row;
+                font-family: 'Montserrat', sans-serif;
+                margin-left: 95px;
+            }
+            .prices19 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 168px;
+            }
+            .lrgprice19 {
+                margin-left: 81px;
+            }
+            .chocoffee {
+                display: flex;
+                flex-direction: row;
+                font-family: 'Montserrat', sans-serif;
+                margin-left: 95px;
+            }
+            .prices20 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 157px;
+            }
+            .lrgprice20 {
+                margin-left: 81px;
+            }
+            .matcha {
+                display: flex;
+                flex-direction: row;
+                font-family: 'Montserrat', sans-serif;
+                margin-left: 95px;
+            }
+            .prices21 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 176px;
+            }
+            .lrgprice21 {
+                margin-left: 80px;
+            }
+            .berry_blast {
+                display: flex;
+                flex-direction: row;
+                font-family: 'Montserrat', sans-serif;
+                margin-left: 95px;
+            }
+            .prices22 {
+                display: flex;
+                flex-direction: row;
+                margin-left: 146px;
+            }
+            .lrgprice22 {
+                margin-left: 80px;
+            }
+            .note {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                margin-left: 355px;
+            }
+            footer {
+                padding: 10px;
+                background-color:#714C28;
+                width: 90%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+                color:#ffffff;
+                font-family: 'Montserrat', sans-serif;
+            }
+            .footertext1 {
+                margin-left: 50px;
+            }
+            .gmail {
+                display: flex;
+                flex-direction: row;
+                margin-left: 10px;
+            }
+            .gmailicon {
+                width: 40px;
+                height: 39px;
+                margin-top: 5px;
+            }
+            .gmailtext {
+                margin-left: 5px;
+            }
+            .phone {
+                display: flex;
+                flex-direction: row;
+                margin-left: 10px;
+            }
+            .phoneicon {
+                width: 40px;
+                height: 39px;
+                margin-top: 5px;
+            }
+            .phonetext {
+                margin-left: 5px;
+            }
+            .fb {
+                display: flex;
+                flex-direction: row;
+                margin-left: 10px;
+            }
+            .fbicon {
+                width: 40px;
+                height: 39px;
+                margin-top: 5px;
+            }
+            .fbtext {
+                margin-left: 5px;
+            }
+            .ig {
+                display: flex;
+                flex-direction: row;
+                margin-left: 10px;
+            }
+            .igicon {
+                width: 40px;
+                height: 39px;
+                margin-top: 5px;
+            }
+            .igtext {
+                margin-left: 5px;
+            }
+
+        </style>       
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <img class="logo" alt="logo" src="logo.png">
+                <nav>
+                    <h1 class="logotext">coffeeteria.</h1>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <img class="menuicon" alt="menuicon" src="logo.png">
+            <h1 class="menutitle">MENU</h1>
+            <div class="menu">
+                <div class="menu1">
+                    <div class="menu1header">
+                        <h1>COFFEE BASED DRINKS</h1>
+                    </div>
+                    <div class="size1">
+                        <p class="sml1">SML</p>
+                        <p class="lrg1">LRG</p>
+                    </div>
+                    <div class="espresso">
+                        <p class="name1">Espresso</p>
+                        <div class="prices1">
+                            <p class="smlprice1">90</p>
+                            <p class="lrgprice1">100</p>
+                        </div>
+                    </div>
+                    <div class="americano">
+                        <p class="name2">Americano</p>
+                        <div class="prices2">
+                            <p class="smlprice2">100</p>
+                            <p class="lrgprice2">110</p>
+                        </div>
+                    </div>
+                    <div class="macchiato">
+                        <p class="name3">Macchiato</p>
+                        <div class="prices3">
+                            <p class="smlprice3">120</p>
+                            <p class="lrgprice3">130</p>
+                        </div>
+                    </div>
+                    <div class="cappuchino">
+                        <p class="name4">Cappuchino</p>
+                        <div class="prices4">
+                            <p class="smlprice4">130</p>
+                            <p class="lrgprice4">140</p>
+                        </div>
+                    </div>
+                    <div class="cafe_latte">
+                        <p class="name5">Café Latte</p>
+                        <div class="prices5">
+                            <p class="smlprice5">130</p>
+                            <p class="lrgprice5">140</p>
+                        </div>
+                    </div>
+                    <div class="mocha_latte">
+                        <p class="name6">Mocha Latte</p>
+                        <div class="prices6">
+                            <p class="smlprice6">140</p>
+                            <p class="lrgprice6">150</p>
+                        </div>
+                    </div>
+                    <div class="vanilla_latte">
+                        <p class="name7">Vanilla Latte</p>
+                        <div class="prices7">
+                            <p class="smlprice7">140</p>
+                            <p class="lrgprice7">150</p>
+                        </div>
+                    </div>
+                    <div class="choco_latte">
+                        <p class="name8">Choco Latte</p>
+                        <div class="prices8">
+                            <p class="smlprice8">145</p>
+                            <p class="lrgprice8">155</p>
+                        </div>
+                    </div>
+                    <div class="hazelnut_latte">
+                        <p class="name9">Hazelnut Latte</p>
+                        <div class="prices9">
+                            <p class="smlprice9">150</p>
+                            <p class="lrgprice9">160</p>
+                        </div>
+                    </div>
+                    <div class="matcha_latte">
+                        <p class="name10">Matcha Latte</p>
+                        <div class="prices10">
+                            <p class="smlprice10">145</p>
+                            <p class="lrgprice10">155</p>
+                        </div>
+                    </div>
+                    <div class="caramel_macchiato">
+                        <p class="name11">Caramel Macchiato</p>
+                        <div class="prices11">
+                            <p class="smlprice11">145</p>
+                            <p class="lrgprice11">155</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="menu2">
+                    <div class="menu2header">
+                        <h1>FRAPPES</h1>
+                    </div>
+                    <div class="size2">
+                        <p class="sml2">SML</p>
+                        <p class="lrg2">LRG</p>
+                    </div>
+                    <div class="vanilla">
+                        <p class="name12">Vanilla*</p>
+                        <div class="prices12">
+                            <p class="smlprice12">100</p>
+                            <p class="lrgprice12">110</p>
+                        </div>
+                    </div>
+                    <div class="mocha">
+                        <p class="name13">Mocha</p>
+                        <div class="prices13">
+                            <p class="smlprice13">105</p>
+                            <p class="lrgprice13">115</p>
+                        </div>
+                    </div>
+                    <div class="pure_choco">
+                        <p class="name14">Pure Choco*</p>
+                        <div class="prices14">
+                            <p class="smlprice14">125</p>
+                            <p class="lrgprice14">135</p>
+                        </div>
+                    </div>
+                    <div class="choco_chip">
+                        <p class="name15">Choco Chip*</p>
+                        <div class="prices15">
+                            <p class="smlprice15">135</p>
+                            <p class="lrgprice15">145</p>
+                        </div>
+                    </div>
+                    <div class="hazelnut_choco">
+                        <p class="name16">Hazelnut Choco*</p>
+                        <div class="prices16">
+                            <p class="smlprice16">155</p>
+                            <p class="lrgprice16">165</p>
+                        </div>
+                    </div>
+                    <div class="choco_oreo">
+                        <p class="name17">Choco Oreo*</p>
+                        <div class="prices17">
+                            <p class="smlprice17">145</p>
+                            <p class="lrgprice17">155</p>
+                        </div>
+                    </div>
+                    <div class="white_choco">
+                        <p class="name18">White Choco*</p>
+                        <div class="prices18">
+                            <p class="smlprice18">135</p>
+                            <p class="lrgprice18">145</p>
+                        </div>
+                    </div>
+                    <div class="caramel">
+                        <p class="name19">Caramel*</p>
+                        <div class="prices19">
+                            <p class="smlprice19">135</p>
+                            <p class="lrgprice19">145</p>
+                        </div>
+                    </div>
+                    <div class="chocoffee">
+                        <p class="name20">ChoCoffee</p>
+                        <div class="prices20">
+                            <p class="smlprice20">135</p>
+                            <p class="lrgprice20">145</p>
+                        </div>
+                    </div>
+                    <div class="matcha">
+                        <p class="name21">Matcha*</p>
+                        <div class="prices21">
+                            <p class="smlprice21">150</p>
+                            <p class="lrgprice21">160</p>
+                        </div>
+                    </div>
+                    <div class="berry_blast">
+                        <p class="name22">Berry Blast*</p>
+                        <div class="prices22">
+                            <p class="smlprice22">150</p>
+                            <p class="lrgprice22">160</p>
+                        </div>
+                    </div>
+                    <div class="note">
+                        <p>
+                            *non coffee based
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p class="footertext1">CONTACT US AT:</p>
+            <div class="gmail">
+                <img class="gmailicon" alt="gmailicon" src="icon1.png">
+                <p class="gmailtext">coffeeteria@gmail.com</p>
+            </div>
+            <div class="phone">
+                <img class="phoneicon" alt="phoneicon" src="icon2.png">
+                <p class="phonetext">0917 122 3344 (MAIN OFFICE)</p>
+            </div>
+            <div class="fb">
+                <img class="fbicon" alt="fbicon" src="icon3.png">
+                <p class="fbtext">facebook.com/coffeeteria</p>
+            </div>
+            <div class="ig">
+                <img class="igicon" alt="igicon" src="icon4.png">
+                <p class="igtext">@coffeeteria</p>
+            </div>
+        </footer>
+    </body>
+</html>
